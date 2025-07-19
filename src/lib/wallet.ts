@@ -140,7 +140,7 @@ function generate_keys_bip39(seed = undefined, derivationIndex = 0) {
 	const publicKey = helpers.buf2hex(hdkey.publicKey).slice(2);
 
 	if (publicKey !== get_vk(privateKey)) {
-		throw Error("Bip32 public key does not match with Lamden public key!");
+		throw Error("Bip32 public key does not match with Xian public key!");
 	}
 
 	if (finalMnemonic !== undefined) {
