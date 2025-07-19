@@ -8,9 +8,9 @@ export class Keystore {
     keyList: any;
     version: any;
     /**
-     * Lamden Keystores
+     * Xian Keystores
      *
-     * This Class will create a lamden keystore instance
+     * This Class will create a Xian keystore instance
      *
      * @param {Object|undefined} arg constructor argument
      * @param {String|undefined} arg.key Create an instance and load it with one private key
@@ -182,14 +182,14 @@ export class Keystore {
     }
     /**
      * Load the keystore with the data from an existing keystore
-     * @param {String} vk A 32 character long Lamden public key
+     * @param {String} vk A 32 character long Xian public key
      * @return {Object} A wallet object
      */
     getWallet(vk) {
         return this.keyList.getWallet(vk)
     }
     /**
-     * Used to validate that a keystore is the proper Lamden Format (does not decrypt data)
+     * Used to validate that a keystore is the proper Xian Format (does not decrypt data)
      * @param {String} keystoreData The contents of an existing encrypted keystore file
      * @return {Boolean} valid
      * @throws {Error} This is not a valid keystore file.
